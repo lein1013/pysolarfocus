@@ -2,7 +2,7 @@ from pysolarfocus import SolarfocusAPI,Systems
 
 # Create the Solarfocus API client
 # TODO: Adapt IP-Address
-solarfocus = SolarfocusAPI(ip="IP-Address", system=Systems.Vampair)
+solarfocus = SolarfocusAPI(ip="IP-Address", system=Systems.Therminator)
 solarfocus.connect()
 # Fetch the values
 solarfocus.update()
@@ -14,8 +14,11 @@ print(solarfocus.boilers[0])
 print("\n")
 print(solarfocus.buffers[0])
 print("\n")
-print(solarfocus.heatpump)
+print(solarfocus.pelletsboiler)
 print("\n")
-print(solarfocus.photovoltaic)
-print("\n")
-print(solarfocus.solar)
+
+# print(solarfocus.heatpump)
+# print("\n")
+# print(solarfocus.photovoltaic)
+# print("\n")
+# print(solarfocus.solar)
