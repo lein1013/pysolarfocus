@@ -22,9 +22,9 @@ class PelletsBoiler(Component):
         self.octoplus_buffer_temperature_top = DataValue(address=11,multiplier=0.1)
         self.log_wood = DataValue(address=12,type=DataTypes.UINT)
         
-        if api_version.greater_or_equal(ApiVersions.V_22_090.value):
-            self.sweep_function_start_stop = DataValue(address=10,register_type=RegisterTypes.Holding)
-            self.sweep_function_extend = DataValue(address=11,register_type=RegisterTypes.Holding)
+        #if api_version.greater_or_equal(ApiVersions.V_22_090.value):
+        #    self.sweep_function_start_stop = DataValue(address=10,register_type=RegisterTypes.Holding)
+        #    self.sweep_function_extend = DataValue(address=11,register_type=RegisterTypes.Holding)
 
         if api_version.greater_or_equal(ApiVersions.V_23_010.value):
             self.pellet_usage_last_fill = DataValue(address=14,count=2,multiplier=0.1)
