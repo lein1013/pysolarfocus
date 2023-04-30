@@ -159,7 +159,7 @@ class Component(object):
                 parsing_success = self._parse(registers, RegisterTypes.Holding) and read_success
             failed = not (parsing_success and read_success) or failed
             if failed:
-                logging.error(f"Failed to read holding registers of {self.__class__.__name__}")
+                logging.error(f"Failed to x read holding registers of {self.__class__.__name__}")
         return not failed
     
     def _parse(self,data:list[int],type:RegisterTypes)->bool:

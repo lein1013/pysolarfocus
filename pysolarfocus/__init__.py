@@ -1,5 +1,5 @@
 """Python client lib for Solarfocus"""
-__version__ = "3.6.7beta1"
+__version__ = "3.6.7beta2"
 
 from enum import Enum
 from packaging import version
