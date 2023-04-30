@@ -18,7 +18,7 @@ class PelletsBoiler(Component):
         self.ash_container = DataValue(address=7)
         self.outdoor_temperature = DataValue(address=8,multiplier=0.1)
         self.boiler_operating_mode = DataValue(address=9)
-        self.octoplus_buffer_temperature_bottom = DataValue(address=10,multiplier=0.1)
+        #self.octoplus_buffer_temperature_bottom = DataValue(address=10,multiplier=0.1)
         self.octoplus_buffer_temperature_top = DataValue(address=11,multiplier=0.1)
         self.log_wood = DataValue(address=12,type=DataTypes.UINT)
         
