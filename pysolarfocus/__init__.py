@@ -13,7 +13,7 @@ class Systems(str, Enum):
     Supported systems by this library
     """
     Vampair = "Vampair"
-    Therminator = "Therminator1" # for testing
+    Therminator = "Therminator" # for testing
     
 class ApiVersions(str, Enum):
     """
