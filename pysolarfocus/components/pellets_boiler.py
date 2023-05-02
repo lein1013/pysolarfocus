@@ -35,4 +35,4 @@ class PelletsBoiler(Component):
             self.pellet_usage_total = DataValue(address=16,count=2,multiplier=0.1)
             self.heat_energy_total = DataValue(address=18,count=2,multiplier=0.1)            
 
-            self.pellet_usage_reset = DataValue(address=12,register_type=RegisterTypes.Holding)
+            #self.pellet_usage_reset = DataValue(address=12,register_type=RegisterTypes.Holding)
