@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "pysolarfocus"
-version = "3.6.4"
+version = "3.6.9"
 description = "Unofficial, local Solarfocus client"
 authors = ["Jeroen Laverman <jjlaverman@web.de>"]
 license = "Apache-2.0"
-homepage = "https://github.com/lavermanjj/pysolarfocus"
-repository = "https://github.com/lavermanjj/pysolarfocus"
+homepage = "https://github.com/lein1013/pysolarfocus"
+repository = "https://github.com/lein1013/pysolarfocus@ecotop"
 keywords = ["solarfocus", "api client"]
 include = ["LICENSE"]
 readme = "README.md"
