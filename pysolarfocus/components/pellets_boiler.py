@@ -15,8 +15,9 @@ class PelletsBoiler(Component):
         
         super().__init__(input_address, holding_address)
         self.temperature = DataValue(address=0,multiplier=0.1)
-        #self.status  = DataValue(address=1,type=DataTypes.UINT) # keep for backward compatibility?
         self.state  = DataValue(address=1,type=DataTypes.UINT)
+        self.status = self.state # keep for backward compatibility?
+        #self.status  = DataValue(address=1,type=DataTypes.UINT) 
         self.message_number = DataValue(address=4)
         self.door_contact = DataValue(address=5) 
         self.cleaning = DataValue(address=6) # seems not to be valid for EcoTop tbd
