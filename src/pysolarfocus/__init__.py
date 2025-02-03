@@ -32,6 +32,7 @@ class ApiVersions(str, Enum):
     V_23_020 = "23.020"
     V_23_040 = "23.040"
     V_23_080 = "23.080"
+    V_23_110 = "23.110"
 
     def greater_or_equal(self, api_version) -> bool:
         """Compare given version with own version."""

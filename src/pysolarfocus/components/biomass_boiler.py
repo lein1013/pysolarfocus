@@ -19,10 +19,10 @@ class BiomassBoiler(Component):
 
         self.message_number = DataValue(address=4)
         self.door_contact = DataValue(address=5)
-        self.cleaning = DataValue(address=6)
+        self.cleaning = -1 # DataValue(address=6)
         self.ash_container = DataValue(address=7)
         self.outdoor_temperature = DataValue(address=8, multiplier=0.1)
-        self.boiler_operating_mode = DataValue(address=9)
+        self.boiler_operating_mode = 4 # DataValue(address=9)
         self.octoplus_buffer_temperature_bottom = DataValue(address=10, multiplier=0.1)
         self.octoplus_buffer_temperature_top = DataValue(address=11, multiplier=0.1)
 
@@ -36,7 +36,7 @@ class BiomassBoiler(Component):
             self.pellet_usage_total = DataValue(address=16, count=2, multiplier=0.1)
             self.heat_energy_total = DataValue(address=18, count=2, multiplier=0.1)
 
-            self.pellet_usage_reset = DataValue(address=12, register_type=RegisterTypes.HOLDING)
+            #self.pellet_usage_reset = DataValue(address=12, register_type=RegisterTypes.HOLDING)
 
         if api_version.greater_or_equal(ApiVersions.V_23_080.value):
             self.sweep_almost_done = DataValue(address=20)
